@@ -1,0 +1,14 @@
+/* Promotion Page */
+.grid-container-promotion{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 15% 20% 20% 20% 15%;
+    grid-template-areas:
+        'header header'
+        'pcenter pcenter '
+        'main1 right1'
+        'left1 main2'
+        'main3 right2'
+        'footer footer';
+}

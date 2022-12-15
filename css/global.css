@@ -1,0 +1,173 @@
+body {
+    background-color: #f8f8f8;
+    margin: 0px;
+    height: 2000px;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(assets\fonts\Montserrat\Montserrat-VariableFont_wght.ttf);
+}
+
+.container {
+    height: 100%;
+}
+
+/* Header */
+header {
+    grid-area: header;
+    height: 97%;
+    margin-bottom: 5px;
+    border-bottom: 3px solid #ff6624;
+}
+
+/* Nav properties */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f3f3f3;
+}
+
+li {
+    float: left;
+    height: 100%;
+}
+
+li a {
+    height: 100%;
+    line-height: 65px;
+    padding: 10px 20px;
+    color: #000000;
+    display: block;
+    font-family: 'Georgia';
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover:not(.active){
+    background-color: #ddd;
+}
+
+li a.active {
+    color: #ffa834;
+    background-color: #ffffff;
+}
+
+/* Logo properties */
+li a.t-logo {
+    padding: 0px;
+}
+
+li a.t-logo img{
+    width: 125px;
+    height: 100px;
+    padding: 0px;
+}
+
+/* Order button properties */
+li.btn-order {
+    float: right;
+}
+
+li.btn-order a{
+    display: block;
+    width: 115px;
+    height: 25px;
+    background: #ff6624;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 25px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+li.btn-order a:hover:not(.active) {
+    background-color: #ffffff;
+    color: #ff6624;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #f77b1b75;
+    height: auto;
+    border-top: 3px solid #ff6624;
+    position: relative;
+}
+
+/* Footer properties */
+footer div.f-logo li a img{
+    width: 325px;
+    height: 15rem;
+    padding: 0px;
+    margin-top: -18px;
+}
+
+/* Footer link properties */
+.f-links {
+    width: 100%
+}
+
+.h-links{
+    float: left;
+}
+
+.m-links{
+    float: left;
+}
+
+.h-links ul,
+.m-links ul{
+    background-color: #f8bf93;
+}
+
+.f-logo li a:hover:not(.active){
+    background-color: #f8bf93;
+}
+
+ul.f-nav li a:hover:not(.active){
+    color: #ffffff;
+    background-color: #f8bf93;
+}
+
+
+ul.f-nav {
+    width: min-content;
+}
+
+ul.f-nav a{
+    width: 200px;
+    display: block;
+    padding: 0px 5px;
+    text-decoration: none;
+    text-align: left;
+}
+
+.c-right {
+    color: #ff6624;
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+}
+
+.c-right p{
+    float: right;
+    padding: 0px 10px;
+}
+
+/* Clearfix */
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: block;
+}
+
+.clearfix:after {
+    clear: both;
+}
